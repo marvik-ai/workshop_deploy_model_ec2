@@ -7,6 +7,7 @@ WORKDIR /app
 # Copiar los archivos de requisitos y instalar las dependencias
 COPY requirements.txt .
 RUN pip install -r requirements.txt
+RUN pip install torch==1.9.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
 
 # Copiar todos los archivos de código fuente al directorio de trabajo
 COPY . /app
