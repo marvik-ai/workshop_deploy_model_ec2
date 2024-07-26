@@ -8,4 +8,3 @@ source api_env/bin/activate
 
 # Instaciión de dependencias para ejecutar API
 pip install -r requirements.txt
-pip install torch==1.9.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
